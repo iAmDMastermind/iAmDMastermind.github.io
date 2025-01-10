@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Tourmaline;
+    src: url(./fonts/Tourmaline/Tourmaline-Bold.ttf);
+}
+
+@font-face {
+    font-family: kugile;
+    src: url(./fonts/kugile/Kugile_Demo.ttf);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+
+
+body{
+    font-family:'kugile';
+    font-weight: 700;
+    background-color: #f0f8ff;
+    color: rgb(71, 128, 109);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    justify-content: center;
+    font-family: 'Tourmaline';
+}
+
+nav ul li:hover, footer li:hover{
+    cursor: pointer;
+    color: hsl(160, 32%, 57%);
+    text-decoration: underline;
+}
+
+.name{
+    padding: 15px;
+    margin: 80px 0px 90px 30px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./picture/me.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name ul{
+    display: flex;
+    font-family: 'Tourmaline';
+    gap: 15px;
+    flex-direction: column;
+    color: rgba(71, 128, 109, 0.631)
+}
+
+.projects{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    gap: 30px;
+    justify-content: center;
+}
+
+.pj, .rv{
+    font-family: "Tourmaline";
+}
+
+#cards{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-family: "Tourmaline";
+    justify-content: center;
+    align-items: end;
+    height: 270px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cards:hover{
+    transition: 0.3s;
+    height: 290px;
+    transform: scale(0.80);      /* Scale up slightly on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#cards p{
+    background-color: rgb(71, 128, 109);
+    border-radius: 10px;
+    padding: 5px;
+    color: #f0f8ff;
+    font-size: 10px;
+    display: inline;
+}
+
+.card1{
+    background-repeat: no-repeat;
+    background-image: url(./picture/deadpool.jpg);
+}
+
+.card2{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./picture/hacker.jpg);
+}
+
+.card3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./picture/laptop.jpg);
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#commentBox{
+    padding: 10px;
+    border: 1px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#commentBox img{
+    border-radius: 100%;
+    margin: 15px 10px 0px 0px;
+}
+
+
+footer{
+    margin-top: 100px;
+    background-color: rgb(71, 128, 109);
+    color: aliceblue;
+    padding: 20px;
+}
+
+li{
+    font-family: "Tourmaline";
+}
+
+section{
+    display: none;
+    border: 1px solid;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px #555;
+    cursor: pointer;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#opay button{
+    padding: 20px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 25px;
+    color: rgb(71, 128, 109);
+    font-family: 'Tourmaline';
+}
+
+#opay button:hover{
+    background-color: hsla(160, 100%, 75%, 0.664)
+}
+
+.close:hover{
+    cursor: pointer;
+    color: aquamarine;
+}
+
+
+section h1{
+    font-family: "Tourmaline";
+    margin-top: 20px;
+}
