@@ -133,6 +133,12 @@ nav ul li:hover, footer li:hover{
     background-image: url(./picture/laptop.jpg);
 }
 
+.card4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./picture/PACE\ EARN.png);
+}
+
 .reviews{
     display: flex;
     flex-wrap: wrap;
